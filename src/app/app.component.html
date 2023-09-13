@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to porject-1</title>
+</head>
+
+<body>
+  <div class="loginText" *ngIf="viewForm">
+    <div class="row">
+      <div class="heading">
+        <h2>Welcome to Project</h2>
+        <p>click the below button to login</p>
+        <button class="btn btn-primary" (click)="goToLogin()">Login</button>
+      </div>
+    </div>
+  </div>
+  <div class="loginForm" *ngIf="LoginForm">
+    <div class="row form-1">
+        <div class="card">
+          <h2 class="text-center white"><b>Login</b></h2>
+          <!-- [formGroup] = loginFirst -->
+          <form >
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" class="form-control" name="firstname"  placeholder="Enter your First Name">
+              <label>Last Name</label>
+              <input type="text" class="form-control" name="lastname"  placeholder="Enter your Last Name">
+              <label>Gender</label>
+              <select name="gender" class="form-control" id="">
+                <option value="">Choose Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <label>Date Of Birth</label>
+              <input type="date" class="form-control" name="dob" >
+            </div>
+            <button class="btn btn-warning next" type="submit" (click)="firstStep()">Next</button>
+          </form>
+        </div>
+    </div>
+  </div>
+  <div class="loginForm1" *ngIf="LoginForm1">
+    <div class="row form-1">
+        <div class="card second_card">
+          <h2 class="text-center mt-2"><b>Login</b></h2>
+          <!-- [formGroup] = loginFirst -->
+          <form  (ngSubmit) = firstStep()>
+            <div class="form-group ">
+              <label id="label" >Email</label>
+              <input type="email" class="form-control second" name="email"  placeholder="Enter your Email">
+              <label id="label">Phone Number</label>
+              <input type="text" class="form-control second" name="phone"  placeholder="Enter your Phone Number">
+              <label id="label">Alternate Phone Number</label>
+              <input type="text" class="form-control second" name="phone1" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn btn-secondary previous" (click)="previous()">previous</button>
+            <button class="btn btn-warning next" (click)="moveTo()">Next</button>
+          </form>
+        </div>
+    </div>
+  </div>
+  <div class="loginForm2" *ngIf="LoginForm2">
+    <div class="row form-1">
+        <div class="card third_card">
+          <h2 class="text-center mt-2"><b>Login</b></h2>
+          <br>
+          <!-- [formGroup] = loginFirst -->
+          <form  (ngSubmit) = firstStep()>
+            <div class="form-group ">
+              <label id="label" >House Number / Flat Number</label>
+              <input type="text" class="form-control second" name="hno"  placeholder="Enter your House/Flat Number">
+              <label id="label" >Street Name / Road Name</label>
+              <input type="text" class="form-control second" name="street"  placeholder="Enter your Stree/Road Name">
+              <label id="label">City</label>
+              <input type="text" class="form-control second" name="city"  placeholder="Enter your City">
+              <label id="label">District</label>
+              <input type="text" class="form-control second" name="district" placeholder="Enter your District">
+              <label id="label">State</label>
+              <input type="text" class="form-control second" name="state" placeholder="Enter your State">
+              <label id="label">Pin Code</label>
+              <input type="text" class="form-control second" name="pin" placeholder="Enter your Pin Code">
+            </div>
+            <button class="btn btn-secondary previous" (click)="moveBack()">previous</button>
+            <button class="btn btn-warning next" type="submit">Next</button>
+          </form>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
