@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new project</title>
+  </head>
+  <body>
+    <div class="preview">
+      <div class="row">
+        <div class="card">
+          <div class="row">
+            <div class="text-center">
+              <h3>Preview of Your Details</h3>
+            </div>
+          </div>
+          <div class="row first mt-3">
+            <div class="col-md-4">
+              <label for="name">First Name</label>
+              <input type="text" class="form-control" name="firstname" disabled placeholder="{{data.firstName}}">
+            </div>
+            <div class="col-md-4">
+              <label for="lname">Last Name</label>
+              <input type="text" class="form-control" name="lastname" disabled placeholder="{{data.lastName}}">
+            </div>
+            <div class="col-md-4">
+              <label for="lname">Gender</label>
+              <input type="text" class="form-control" name="gender" disabled placeholder="{{data.gender}}">
+            </div>
+          </div>
+          <div class="row second">
+            <div class="col-md-3">
+              <label for="name">Date of Birth</label>
+              <input type="text" class="form-control" name="dob" disabled placeholder="{{data.dob}}">
+            </div>
+            <div class="col-md-3">
+              <label for="lname">Email</label>
+              <input type="text" class="form-control" name="email" disabled placeholder="{{data.email}}">
+            </div>
+            <div class="col-md-3">
+              <label for="lname">Phone Number</label>
+              <input type="text" class="form-control" name="phone" disabled placeholder="{{data.phone}}">
+            </div>
+            <div class="col-md-3">
+              <label for="lname">Alternative Phone Number</label>
+              <input type="text" class="form-control" name="phone1" disabled placeholder="{{data.phone1}}">
+            </div>
+          </div>
+          <div class="row third">
+            <div class="col-md-4">
+              <label for="name">House/Flat Number</label>
+              <input type="text" class="form-control" name="hno" disabled placeholder="{{data.hno}}">
+            </div>
+            <div class="col-md-4">
+              <label for="lname">Street/Road No</label>
+              <input type="text" class="form-control" name="street" disabled placeholder="{{data.street}}">
+            </div>
+            <div class="col-md-4">
+              <label for="lname">City</label>
+              <input type="text" class="form-control" name="city" disabled placeholder="{{data.city}}">
+            </div>
+          </div>
+          <div class="row fourth">
+            <div class="col-md-4">
+              <label for="name">District</label>
+              <input type="text" class="form-control" name="district" disabled placeholder="{{data.district}}">
+            </div>
+            <div class="col-md-4">
+              <label for="lname">State</label>
+              <input type="text" class="form-control" name="state" disabled placeholder="{{data.state}}">
+            </div>
+            <div class="col-md-4">
+              <label for="lname">Pin Code</label>
+              <input type="text" class="form-control" name="pincode" disabled placeholder="{{data.pincode}}">
+            </div>
+          </div>
+          <button class="btn btn-danger edit" (click)="edit()">Edit</button>
+          <button class="btn btn-success submit" (click)="submit()">Final Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

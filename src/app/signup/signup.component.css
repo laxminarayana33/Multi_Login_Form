@@ -1,0 +1,87 @@
+.loginText{
+  background: url(/assets/images/bg-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 860px;
+}
+.heading {
+  margin-top: 20%;
+  text-align: center;
+}
+.loginForm{
+  background: url(/assets/images/bg-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 860px;
+}
+.card{
+  height: 500px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 50px 5px lightgoldenrodyellow;
+  left: 20%;
+  top: 20%;
+  position: absolute;
+  background-color: rgba(200, 200,200,0.5);
+}
+.form-1{
+  align-items: center;
+}
+.white{
+  color: white;
+  margin-top: 5px;
+}
+.form-group{
+  margin: 15px;
+}
+.form-control{
+  opacity: 0.5;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+label{
+  font-size: medium;
+  font-weight: 700;
+  color: white;
+}
+.next{
+  float: right;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.previous{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.loginForm1{
+  background: url(/assets/images/bg-3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 860px;
+  opacity: 0.7;
+}
+.second_card{
+height: 430px;
+left: 50%;
+top: 10%;
+background-color: rgba(249, 255, 255, 0.896);
+}
+#label{
+  color: black;
+}
+.second{
+  opacity: 1;
+}
+.loginForm2{
+  background: url(/assets/images/bg-4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 860px;
+  opacity: 1;
+}
+.third_card{
+height: 680px;
+left: 50%;
+top: 10%;
+}
